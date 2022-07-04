@@ -24,6 +24,11 @@ app.get('/events', (req, res) => {
   res.send(events);
 });
 
+app.get('/' , (req, res) => {
+  res.send('Hello World!');
+}
+);
+
 app.listen(4005, () => {
   console.log('Listening on 4005');
 });
